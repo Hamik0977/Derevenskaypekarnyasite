@@ -106,8 +106,9 @@ footer{padding:30px var(--pad);display:flex;flex-wrap:wrap;gap:12px;justify-cont
 @media(max-width:600px){.adv,.cards{grid-template-columns:1fr}.card--big{grid-column:auto}.card .cap{transform:none}.dist div{grid-template-columns:1fr;gap:2px}.top .btn{display:none}body{font-size:15px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
+<link rel="stylesheet" href="../modern.css">
 </head>
-<body>
+<body data-site="navy" data-logo="../images/logo-light.png" data-pdf="../mechta-presentation.pdf" data-marquee-after="#about" data-marquee="68 апартаментов у моря | Подогреваемый бассейн 8 × 15 м | Море — 5 минут пешком | Сервис круглый год | Профессиональное управление | Феодосия, улица Федько">
 <header class="top" id="top"><a href="#"><img src="../images/logo-dark.png" alt="Мечта — апартаменты у моря"></a>
 <nav><a href="#about">О проекте</a><a href="#numbers">В цифрах</a><a href="#infra">Инфраструктура</a><a href="#place">Расположение</a><a href="#plans">Планировки</a><a href="#invest">Доход</a></nav>
 <a href="#contact" class="btn btn--navy">Получить расчёт</a></header>
@@ -146,7 +147,7 @@ footer{padding:30px var(--pad);display:flex;flex-wrap:wrap;gap:12px;justify-cont
 
 <section id="infra"><div class="wrap">
   <p class="kicker rv">Сервис, который работает круглый год</p><h2 class="rv">Инфраструктура комплекса</h2>
-  <p class="lead rv">Единый стандарт размещения, чистоты и обслуживания во всём комплексе. Наведите на карточку, чтобы узнать больше.</p>
+  <p class="lead rv">Единый стандарт размещения, чистоты и обслуживания во всём комплексе. Наведите на карточку, чтобы узнать больше. На телефоне — листайте вбок.</p>
   <div class="cards">
     <div class="card card--big rv" tabindex="0"><img src="../images/pool-aerial.webp" alt="Бассейн" loading="lazy"><div class="cap glass"><h3>Подогреваемый открытый бассейн</h3><p>8 × 15 м, глубина 1,8 м. Рядом — зона шезлонгов 87,5 м².</p></div></div>
     <div class="card rv" tabindex="0"><img src="../images/lobby.webp" alt="Лобби" loading="lazy"><div class="cap glass"><h3>Ресепшен и консьерж</h3><p>Ресепшен и консьерж-сервис для гостей и собственников.</p></div></div>
@@ -234,5 +235,7 @@ const ul=$('#contacts');if(CONTACTS.phone)ul.innerHTML+=`<li><a href="tel:${CONT
 $('#form').onsubmit=e=>{e.preventDefault();const f=e.target.elements,n=f.name.value.trim(),p=f.phone.value.trim();if(!n||p.replace(/\D/g,'').length<10){$('#msg').textContent='Укажите имя и телефон.';return}const t=`Заявка «Мечта»: ${n}, ${p}`;if(CONTACTS.telegram){open(`https://t.me/${CONTACTS.telegram}?text=${encodeURIComponent(t)}`,'_blank');$('#msg').textContent='Открываем Telegram…'}else if(CONTACTS.email){location.href=`mailto:${CONTACTS.email}?subject=Заявка&body=${encodeURIComponent(t)}`}else $('#msg').textContent='Приём заявок скоро заработает. Спасибо!'};
 const rg=$('#rings');new IntersectionObserver(([e],o)=>{if(e.isIntersecting){rg.classList.add('on');o.disconnect()}},{threshold:.3}).observe(rg);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../modern.js"></script>
 </body>
 </html>

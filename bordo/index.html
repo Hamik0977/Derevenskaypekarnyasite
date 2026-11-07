@@ -107,8 +107,9 @@ footer{padding:60px var(--pad);text-align:center}footer .fin{font-family:"Tenor 
 @media(max-width:600px){.cols3,.why,.steps,.stats,.money,.season{grid-template-columns:1fr}.season button:first-child{border-right:0;border-bottom:1px solid var(--line)}.dl div{grid-template-columns:1fr;gap:2px}.run span{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.cover img,.cover p{opacity:1;transform:none}.sketch *{stroke-dashoffset:0!important}}
 </style>
+<link rel="stylesheet" href="../modern.css">
 </head>
-<body>
+<body data-site="bordo" data-logo="../images/logo-light.png" data-pdf="../mechta-presentation.pdf" data-marquee-after=".toc" data-marquee="68 апартаментов у моря | Подогреваемый бассейн 8 × 15 м | Море — 5 минут пешком | Сервис круглый год | Профессиональное управление | Феодосия, улица Федько" data-nav=".toc a">
 <div class="run"><a href="#">Мечта</a><span>Апартаменты у моря</span><span>Феодосия</span></div>
 <div class="chap" id="chap"></div>
 
@@ -243,5 +244,7 @@ $$('#season button').forEach(b=>b.onclick=()=>{$$('#season button').forEach(x=>x
 const ul=$('#contacts');if(CONTACTS.phone)ul.innerHTML+=`<li><a href="tel:${CONTACTS.phone.replace(/[^\d+]/g,'')}">${CONTACTS.phone}</a></li>`;if(CONTACTS.telegram)ul.innerHTML+=`<li><a href="https://t.me/${CONTACTS.telegram}">Telegram @${CONTACTS.telegram}</a></li>`;if(CONTACTS.email)ul.innerHTML+=`<li><a href="mailto:${CONTACTS.email}">${CONTACTS.email}</a></li>`;if(!ul.innerHTML)ul.innerHTML='<li>Контакты появятся в ближайшее время</li>';
 $('#form').onsubmit=e=>{e.preventDefault();const f=e.target.elements,n=f.name.value.trim(),p=f.phone.value.trim();if(!n||p.replace(/\D/g,'').length<10){$('#msg').textContent='Укажите имя и телефон.';return}const t=`Заявка «Мечта»: ${n}, ${p}`;if(CONTACTS.telegram)open(`https://t.me/${CONTACTS.telegram}?text=${encodeURIComponent(t)}`,'_blank');else if(CONTACTS.email)location.href=`mailto:${CONTACTS.email}?subject=Заявка&body=${encodeURIComponent(t)}`;else $('#msg').textContent='Приём заявок скоро заработает. Спасибо!'};
 </script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../modern.js"></script>
 </body>
 </html>

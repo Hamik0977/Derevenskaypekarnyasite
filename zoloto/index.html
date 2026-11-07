@@ -103,8 +103,9 @@ footer{padding:30px var(--pad);display:flex;justify-content:space-between;flex-w
 @media(max-width:600px){.svc,.adv{grid-template-columns:1fr}.km b{min-width:96px;font-size:1.6rem}.num69 .lab{left:0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
+<link rel="stylesheet" href="../modern.css">
 </head>
-<body>
+<body data-site="zoloto" data-logo="../images/logo-light.png" data-pdf="../mechta-presentation.pdf" data-marquee-after="#about" data-marquee="68 апартаментов у моря | Подогреваемый бассейн 8 × 15 м | Море — 5 минут пешком | Сервис круглый год | Профессиональное управление | Феодосия, улица Федько">
 <header class="hd" id="hd"><a href="#"><img src="../images/logo-light.png" alt="Мечта — апартаменты у моря"></a>
 <nav><a href="#about">О проекте</a><a href="#service">Сервис</a><a href="#plans">Планировки</a><a href="#gallery">Галерея</a><a href="#loc">Локация</a><a href="#invest">Доход</a></nav>
 <a class="btn btn--o" href="#contact">Подборка</a></header>
@@ -221,5 +222,7 @@ $('#lb').onclick=()=>$('#lb').hidden=true;addEventListener('keydown',e=>{if(e.ke
 const ul=$('#contacts');if(CONTACTS.phone)ul.innerHTML+=`<li><a href="tel:${CONTACTS.phone.replace(/[^\d+]/g,'')}">${CONTACTS.phone}</a></li>`;if(CONTACTS.telegram)ul.innerHTML+=`<li><a href="https://t.me/${CONTACTS.telegram}">Telegram @${CONTACTS.telegram}</a></li>`;if(CONTACTS.email)ul.innerHTML+=`<li><a href="mailto:${CONTACTS.email}">${CONTACTS.email}</a></li>`;if(!ul.innerHTML)ul.innerHTML='<li>Контакты появятся в ближайшее время</li>';
 $('#form').onsubmit=e=>{e.preventDefault();const f=e.target.elements,n=f.name.value.trim(),p=f.phone.value.trim();if(!n||p.replace(/\D/g,'').length<10){$('#msg').textContent='Укажите имя и телефон.';return}const t=`Заявка «Мечта»: ${n}, ${p}`;if(CONTACTS.telegram)open(`https://t.me/${CONTACTS.telegram}?text=${encodeURIComponent(t)}`,'_blank');else if(CONTACTS.email)location.href=`mailto:${CONTACTS.email}?subject=Заявка&body=${encodeURIComponent(t)}`;else $('#msg').textContent='Приём заявок скоро заработает. Спасибо!'};
 </script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../modern.js"></script>
 </body>
 </html>
