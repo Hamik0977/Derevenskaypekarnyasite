@@ -134,7 +134,7 @@ form.addEventListener('submit', e => {
   f.name.classList.toggle('invalid', !name);
   f.phone.classList.toggle('invalid', phone.replace(/\D/g, '').length < 10);
   if (!name || phone.replace(/\D/g, '').length < 10) { msg.textContent = 'Пожалуйста, укажите имя и номер телефона.'; return; }
-  const text = `Здравствуйте! Хочу получить подборку апартаментов «Мечта».\nИмя: ${name}\nТелефон: ${phone}\nИнтерес: ${goal}`;
+  const text = `Здравствуйте! Хочу получить подборку апартаментов «Мечта».\nИмя: ${name}\nТелефон: ${phone}\nИнтерес: ${goal}${window.mechtaQuiz ? '\n' + window.mechtaQuiz : ''}`;
   if (CONTACTS.telegram) {
     navigator.clipboard?.writeText(text).catch(() => {});
     open(`https://t.me/${CONTACTS.telegram}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
@@ -154,7 +154,7 @@ form.addEventListener('submit', e => {
 const TOUR = [
   { img: 'tour-front', zone: 'Снаружи', name: 'Фасад комплекса', fx: 50, fy: 50, mfx: 30, w: 2400, h: 1044, hs: [
     { x: 26, y: 20, t: 'Пятый этаж', d: '20 апартаментов под мансардной кровлей' },
-    { x: 46, y: 56, t: 'Четыре жилых этажа', d: '69 одно- и двухкомнатных апартаментов' },
+    { x: 46, y: 56, t: 'Четыре жилых этажа', d: '68 одно- и двухкомнатных апартаментов' },
     { x: 93, y: 48, t: '«Мечта»', d: 'Апарт-отель с единым стандартом сервиса', left: true } ] },
   { img: 'tour-corner', zone: 'Снаружи', name: 'Терраса и вход', fx: 55, fy: 60, mfx: 50, w: 2358, h: 2159, hs: [
     { x: 9, y: 70, t: 'Открытая терраса', d: '200 м² открытой посадки столовой' },

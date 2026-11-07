@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>«Мечта» — апартаменты у моря в Феодосии</title>
-  <meta name="description" content="Апарт-отель «Мечта» в Феодосии: 69 апартаментов, подогреваемый бассейн, профессиональное гостиничное управление. Море в пяти минутах.">
+  <meta name="description" content="Апарт-отель «Мечта» в Феодосии: 68 апартаментов, подогреваемый бассейн, профессиональное гостиничное управление. Море в пяти минутах.">
   <meta name="theme-color" content="#f6efe6">
   <link rel="icon" href="images/logo-dark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extra.css">
 </head>
 <body>
   <header class="header" id="header">
@@ -20,6 +21,7 @@
     </a>
     <nav class="nav" id="nav">
       <a href="#about">О проекте</a>
+      <a href="#how">Как это работает</a>
       <a href="#interiors">Интерьеры</a>
       <a href="#service">Сервис</a>
       <a href="#plans">Планировки</a>
@@ -45,7 +47,7 @@
           <p class="hero__lead">Апарт-отель с единым стандартом сервиса. Листайте — и&nbsp;прогуляйтесь по&nbsp;комплексу: от&nbsp;фасада до&nbsp;бассейна.</p>
           <div class="hero__actions">
             <a href="#contact" class="btn">Получить подборку</a>
-            <a href="#about" class="btn btn--ghost">О проекте</a>
+            <a href="mechta-presentation.pdf" class="btn btn--ghost" download>Скачать презентацию</a>
           </div>
         </div>
 
@@ -64,10 +66,59 @@
 
     <!-- Ключевые цифры -->
     <section class="numbers" id="numbers">
-      <div class="num reveal"><strong data-count="69">69</strong><span>одно- и двухкомнатных апартаментов</span></div>
+      <div class="num reveal"><strong data-count="68">68</strong><span>одно- и двухкомнатных апартаментов</span></div>
       <div class="num reveal"><strong><span data-count="2459" data-format="space">2 459</span> м²</strong><span>площадь территории</span></div>
       <div class="num reveal"><strong>8 × 15 м</strong><span>подогреваемый бассейн</span></div>
       <div class="num reveal"><strong><span data-count="5">5</span> минут</strong><span>пешком до набережной и&nbsp;пляжей</span></div>
+    </section>
+
+
+    <!-- Как это работает: модель собственник + управляющая компания -->
+    <section class="section how" id="how">
+      <span class="side-label">Как это работает</span>
+      <div class="head">
+        <h2 class="reveal">Ваш апартамент работает, пока вы отдыхаете</h2>
+        <p class="reveal">Вы покупаете апартамент — один или несколько — и&nbsp;становитесь его собственником. Дальше можно жить в&nbsp;нём самому или передать его управляющей компании: она сдаёт апартамент в&nbsp;аренду и&nbsp;берёт на&nbsp;себя всю работу.</p>
+      </div>
+      <ol class="flow" id="flow">
+        <li class="reveal"><span class="flow__n">01</span><svg viewBox="0 0 48 48"><path d="M8 42V18L24 6l16 12v24M18 42V28h12v14"/></svg><b>Выбираете апартамент</b><p>Нужная площадь и&nbsp;планировка. Можно купить один апартамент или сразу несколько.</p></li>
+        <li class="reveal"><span class="flow__n">02</span><svg viewBox="0 0 48 48"><rect x="11" y="5" width="26" height="36" rx="2"/><path d="M17 15h14M17 22h14M17 29h8"/><circle cx="33" cy="37" r="6"/><path d="M30.5 37l2 2 3.5-4"/></svg><b>Получаете документ</b><p>На&nbsp;каждый апартамент — свой документ о&nbsp;собственности. Он ваш.</p></li>
+        <li class="reveal"><span class="flow__n">03</span><svg viewBox="0 0 48 48"><path d="M6 26l9-9 7 4 7-5 13 10M14 30l6 6M20 26l8 8M26 24l7 7"/><path d="M6 26l8 8M42 26l-8 8"/></svg><b>Договор с управляющей компанией</b><p>По желанию передаёте апартамент в&nbsp;профессиональное гостиничное управление.</p></li>
+        <li class="reveal"><span class="flow__n">04</span><svg viewBox="0 0 48 48"><path d="M6 20l26-10v28L6 28z"/><path d="M32 16h6v16h-6M12 28l3 12h6l-3-11"/></svg><b>УК сдаёт и&nbsp;рекламирует</b><p>Маркетинг и&nbsp;реклама, бронирование, работа с&nbsp;гостями, уборка, отчётность — без вашего участия.</p></li>
+        <li class="reveal"><span class="flow__n">05</span><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 14v20M29 18c-1-2-3-3-5-3-3 0-5 2-5 4 0 6 11 3 11 9 0 2-2 4-5 4-3 0-5-1-6-3"/></svg><b>Получаете доход</b><p>Управляющая компания оставляет себе 20% от&nbsp;прибыли, остальное — ваш доход.</p></li>
+      </ol>
+
+      <div class="calc reveal" id="calc">
+        <div class="calc__in">
+          <p class="caps" style="margin-top:0">Посчитайте сами</p>
+          <label class="calc__row"><span>Сколько апартаментов <b id="c-n">1</b></span><input type="range" id="c-count" min="1" max="10" value="1"></label>
+          <label class="calc__row"><span>Прибыль от сдачи одного апартамента в год <b id="c-p">500 тыс. ₽</b></span><input type="range" id="c-profit" min="100" max="1200" step="25" value="500"></label>
+          <p class="note">Подставьте свою оценку. По расчётам проекта чистый доход одного апартамента — 300–600 тыс. ₽ в&nbsp;год.</p>
+        </div>
+        <div class="calc__out">
+          <div class="split-bar" aria-hidden="true"><i class="sb-own"></i><i class="sb-uk"></i></div>
+          <div class="calc__res">
+            <div><span>Вам в год</span><strong id="c-own">400 тыс. ₽</strong><small>80% прибыли</small></div>
+            <div><span>Управляющей компании</span><strong id="c-uk">100 тыс. ₽</strong><small>20% прибыли</small></div>
+          </div>
+          <p class="calc__month">≈ <b id="c-month">33 тыс. ₽</b> в месяц в среднем за год</p>
+        </div>
+      </div>
+      <p class="note">Калькулятор только показывает, как прибыль делится между собственником и УК. Итог зависит от площади и&nbsp;стоимости апартамента, тарифа, загрузки, расходов и&nbsp;налогов. Доход не&nbsp;гарантирован; условия договора управления уточняйте в&nbsp;отделе продаж.</p>
+
+      <div class="modes">
+        <p class="caps reveal">Три сценария владения</p>
+        <div class="modes__tabs" role="tablist" id="modes">
+          <button class="mtab active" data-m="0">Жить самому</button>
+          <button class="mtab" data-m="1">Сдавать через УК</button>
+          <button class="mtab" data-m="2">Совмещать</button>
+        </div>
+        <div class="modes__body" id="modes-body">
+          <div class="mode active"><img src="images/room-main.webp" alt="" loading="lazy"><div><h3>Своё место у&nbsp;моря</h3><p>Апартамент — ваш дом в&nbsp;Феодосии. Бассейн, столовая и&nbsp;кафе, ресепшен и&nbsp;клининг работают круглый год, а&nbsp;море — в&nbsp;пяти минутах пешком.</p></div></div>
+          <div class="mode"><img src="images/pool-side.webp" alt="" loading="lazy"><div><h3>Пассивный доход</h3><p>Управляющая компания сдаёт апартамент, ведёт рекламу и&nbsp;бронирования, принимает гостей и&nbsp;присылает отчётность. Вы получаете доход без личного участия.</p></div></div>
+          <div class="mode"><img src="images/tour-pool.webp" alt="" loading="lazy"><div><h3>Отдых и доход</h3><p>Отдыхайте в&nbsp;своём апартаменте, когда удобно, а&nbsp;в&nbsp;остальное время он работает на&nbsp;вас через управляющую компанию. Порядок согласуется в&nbsp;договоре управления.</p></div></div>
+        </div>
+      </div>
     </section>
 
     <!-- 02 О проекте -->
@@ -85,7 +136,7 @@
           <li>высокий уровень сервиса</li>
         </ul>
         <div class="facts reveal">
-          <div><strong>69</strong><span>одно- и двухкомнатных апартаментов</span></div>
+          <div><strong>68</strong><span>одно- и двухкомнатных апартаментов</span></div>
           <div><strong>413 м²</strong><span>коммерческих помещений: аренда 88&nbsp;м² и&nbsp;столовая 325&nbsp;м²</span></div>
         </div>
       </div>
@@ -294,6 +345,36 @@
       </div>
     </section>
 
+
+    <!-- Подбор апартамента -->
+    <section class="section quiz sand" id="quiz">
+      <span class="side-label">Подбор</span>
+      <div class="quiz__box reveal">
+        <div class="quiz__head"><p class="caps" style="margin:0">Подберём апартамент за 3 вопроса</p><span id="q-step">1 / 3</span></div>
+        <div class="quiz__bar"><i id="q-bar"></i></div>
+        <div class="q active" data-q="goal"><h3>Для чего вы рассматриваете апартамент?</h3><div class="q__opts"><button>Жить самому</button><button>Инвестиция и доход</button><button>И то, и другое</button></div></div>
+        <div class="q" data-q="count"><h3>Сколько апартаментов?</h3><div class="q__opts"><button>Один</button><button>2–3</button><button>4 и больше</button></div></div>
+        <div class="q" data-q="type"><h3>Какой формат интересен?</h3><div class="q__opts"><button>Однокомнатный</button><button>Двухкомнатный</button><button>Пока не знаю</button></div></div>
+        <div class="q" data-q="done"><h3>Готово! Подготовим подборку под ваш запрос</h3><p class="q__sum" id="q-sum"></p><a href="#contact" class="btn" id="q-go">Получить подборку</a> <button class="q__again" id="q-again">Пройти заново</button></div>
+      </div>
+    </section>
+
+    <!-- Частые вопросы -->
+    <section class="section faq" id="faq">
+      <span class="side-label">Вопросы</span>
+      <div class="head"><h2 class="reveal">Частые вопросы</h2><p class="reveal">Коротко о&nbsp;том, как устроена покупка и&nbsp;управление. Не&nbsp;нашли ответ — спросите в&nbsp;отделе продаж.</p></div>
+      <div class="faq__list">
+        <details class="reveal"><summary>Что я получаю при покупке?</summary><p>Апартамент в&nbsp;собственность. На&nbsp;каждый купленный апартамент оформляется свой документ о&nbsp;собственности.</p></details>
+        <details class="reveal"><summary>Можно купить несколько апартаментов?</summary><p>Да. Продажа ведётся отдельными апартаментами, можно выбрать один или несколько — на&nbsp;нужных этажах и&nbsp;с&nbsp;нужной планировкой.</p></details>
+        <details class="reveal"><summary>Обязательно передавать апартамент в&nbsp;управление?</summary><p>Нет. Собственник может жить в&nbsp;апартаменте сам или передать его в&nbsp;профессиональное гостиничное управление.</p></details>
+        <details class="reveal"><summary>Что делает управляющая компания?</summary><p>Сдаёт апартамент в&nbsp;аренду и&nbsp;берёт на&nbsp;себя маркетинг и&nbsp;рекламу, бронирование, работу с&nbsp;гостями и&nbsp;отчётность. Комплекс обслуживается по&nbsp;единому гостиничному стандарту: ресепшен, клининг, прачечная.</p></details>
+        <details class="reveal"><summary>Сколько берёт управляющая компания?</summary><p>20% от&nbsp;прибыли. Остальное получает собственник. Точные условия закрепляются в&nbsp;договоре управления.</p></details>
+        <details class="reveal"><summary>Какой доход можно ожидать?</summary><p>По&nbsp;расчётам проекта — 300–600 тыс. ₽ в&nbsp;год чистого дохода с&nbsp;одного апартамента при расчётной загрузке 70–95% с&nbsp;мая по&nbsp;октябрь и&nbsp;30–50% с&nbsp;ноября по&nbsp;апрель. Это расчётные показатели, доход не&nbsp;гарантирован.</p></details>
+        <details class="reveal"><summary>Комплекс работает только летом?</summary><p>Нет, круглый год: столовая, кафе, коворкинг и&nbsp;сервис работают весь год. А&nbsp;Феодосия — полноценный город с&nbsp;инфраструктурой, которой пользуются круглый год.</p></details>
+        <details class="reveal"><summary>Как получить планировки и&nbsp;цены?</summary><p>Оставьте заявку — подготовим доступные планировки с&nbsp;площадями и&nbsp;финансовую модель для выбранного апартамента.</p></details>
+      </div>
+    </section>
+
     <!-- 12 Контакты -->
     <section class="contact" id="contact">
       <div class="contact__text">
@@ -325,6 +406,9 @@
     <p class="footer__small">Изображения — визуализации проектных решений. Информация на сайте не является публичной офертой.</p>
   </footer>
 
+
+  <a href="#contact" class="side-tab" aria-label="Оставить заявку">Оставить заявку</a>
+  <div class="mbar"><a href="mechta-presentation.pdf" download>Презентация</a><a href="#contact" class="mbar__main">Оставить заявку</a></div>
   <div class="lightbox" id="lightbox" hidden>
     <button class="lightbox__close" id="lb-close" aria-label="Закрыть">✕</button>
     <button class="lightbox__nav lightbox__prev" id="lb-prev" aria-label="Предыдущее фото">‹</button>
@@ -333,5 +417,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="extra.js"></script>
 </body>
 </html>

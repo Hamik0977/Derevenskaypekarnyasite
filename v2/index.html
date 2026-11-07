@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>«Мечта» — апартаменты у моря в Феодосии</title>
+  <meta name="description" content="Апарт-отель «Мечта» в Феодосии: 68 апартаментов, подогреваемый бассейн, профессиональное гостиничное управление. Море в пяти минутах.">
+  <meta name="theme-color" content="#f6efe6">
+  <link rel="icon" href="../images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <a href="#top" class="header__logo" aria-label="Мечта — на главную">
+      <img src="../images/logo-light.png" alt="Мечта — апартаменты у моря" class="logo-light">
+      <img src="../images/logo-dark.png" alt="" class="logo-dark">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about">О проекте</a>
+      <a href="#interiors">Интерьеры</a>
+      <a href="#service">Сервис</a>
+      <a href="#plans">Планировки</a>
+      <a href="#location">Расположение</a>
+      <a href="#invest">Инвестиции</a>
+    </nav>
+    <a href="#contact" class="btn btn--small header__cta">Получить подборку</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- 01 Виртуальная прогулка: снаружи → внутрь → во двор -->
+    <section class="tour" id="tour" aria-label="Виртуальная прогулка по комплексу">
+      <div class="tour__sticky">
+        <div class="tour__scenes" id="tour-scenes"></div>
+        <div class="tour__shade"></div>
+
+        <div class="tour__frame" aria-hidden="true"><i class="fl fl--v"></i><i class="fl fl--h"></i><i class="fl fl--v2"></i></div>
+
+        <div class="tour__intro" id="tour-intro">
+          <p class="eyebrow">Феодосия · побережье Чёрного моря</p>
+          <h1>Место, куда хочется <em>возвращаться</em></h1>
+          <p class="hero__lead">Апарт-отель с единым стандартом сервиса. Листайте — и&nbsp;прогуляйтесь по&nbsp;комплексу: от&nbsp;фасада до&nbsp;бассейна.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn">Получить подборку</a>
+            <a href="#about" class="btn btn--ghost">О проекте</a>
+          </div>
+        </div>
+
+        <div class="tour__hud">
+          <div class="tour__count"><b id="tour-num">01</b><span>/ <span id="tour-total">07</span></span></div>
+          <div>
+            <p class="tour__zone" id="tour-zone">Снаружи</p>
+            <p class="tour__name" id="tour-name">Фасад комплекса</p>
+          </div>
+          <div class="tour__bar"><i id="tour-bar"></i></div>
+        </div>
+        <nav class="tour__nav" id="tour-nav" aria-label="Перейти к месту"></nav>
+        <div class="tour__hint" id="tour-hint"><span></span>Листайте, чтобы пройти внутрь</div>
+      </div>
+    </section>
+
+    <!-- Ключевые цифры -->
+    <section class="numbers" id="numbers">
+      <div class="num reveal"><strong data-count="68">68</strong><span>одно- и двухкомнатных апартаментов</span></div>
+      <div class="num reveal"><strong><span data-count="2459" data-format="space">2 459</span> м²</strong><span>площадь территории</span></div>
+      <div class="num reveal"><strong>8 × 15 м</strong><span>подогреваемый бассейн</span></div>
+      <div class="num reveal"><strong><span data-count="5">5</span> минут</strong><span>пешком до набережной и&nbsp;пляжей</span></div>
+    </section>
+
+    <!-- 02 О проекте -->
+    <section class="section split" id="about">
+      <span class="side-label">О проекте</span>
+      <div class="split__text">
+        <h2 class="reveal">Профессиональный апарт-отель с&nbsp;единым стандартом сервиса</h2>
+        <p class="lead reveal">Комплекс создаётся в формате апарт-отеля гостиничного типа с&nbsp;едиными стандартами качества, управления и&nbsp;сервиса.</p>
+        <p class="caps reveal">Концепция комплекса</p>
+        <ul class="dash-list reveal">
+          <li>круглогодичная работа</li>
+          <li>профессиональное гостиничное управление</li>
+          <li>высокая ликвидность объекта</li>
+          <li>единый гостиничный стандарт</li>
+          <li>высокий уровень сервиса</li>
+        </ul>
+        <div class="facts reveal">
+          <div><strong>68</strong><span>одно- и двухкомнатных апартаментов</span></div>
+          <div><strong>413 м²</strong><span>коммерческих помещений: аренда 88&nbsp;м² и&nbsp;столовая 325&nbsp;м²</span></div>
+        </div>
+      </div>
+      <div class="split__media">
+        <div class="img-reveal parallax"><img src="../images/facade-sign.webp" alt="Фасад с вывеской «Мечта»" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- Широкая картинка -->
+    <section class="wide">
+      <div class="wide__img parallax"><img src="../images/facade-front.webp" alt="Главный фасад апарт-отеля" loading="lazy"></div>
+      <p class="wide__quote">Апартаменты у моря · Феодосия</p>
+    </section>
+
+    <!-- 03 Интерьеры -->
+    <section class="section" id="interiors">
+      <span class="side-label">Интерьеры</span>
+      <div class="head">
+        <h2 class="reveal">Спокойная природная палитра</h2>
+        <p class="reveal">Лобби, коридоры и&nbsp;апартаменты объединяет тёплая нейтральная палитра. Единый интерьерный стандарт формирует цельный образ отеля и&nbsp;упрощает обслуживание номерного фонда.</p>
+      </div>
+      <div class="gallery">
+        <button class="g g--big" data-src="../images/room-main.webp"><img src="../images/room-main.webp" alt="Спальня в апартаменте" loading="lazy"></button>
+        <button class="g" data-src="../images/room-2.webp"><img src="../images/room-2.webp" alt="Апартамент с двуспальной кроватью" loading="lazy"></button>
+        <button class="g" data-src="../images/room-desk.webp"><img src="../images/room-desk.webp" alt="Рабочая зона в апартаменте" loading="lazy"></button>
+        <button class="g" data-src="../images/room-3.webp"><img src="../images/room-3.webp" alt="Апартамент" loading="lazy"></button>
+        <button class="g" data-src="../images/corridor.webp"><img src="../images/corridor.webp" alt="Коридор" loading="lazy"></button>
+        <button class="g g--wide" data-src="../images/lobby.webp"><img src="../images/lobby.webp" alt="Лобби и ресепшен" loading="lazy"></button>
+      </div>
+      <p class="note">Визуализации проектных решений. Финальная комплектация может отличаться.</p>
+    </section>
+
+    <!-- 04 Сервис -->
+    <section class="section split split--rev sand" id="service">
+      <span class="side-label">Сервис</span>
+      <div class="split__media">
+        <div class="img-reveal tall parallax"><img src="../images/pool-aerial.webp" alt="Подогреваемый бассейн и зона шезлонгов" loading="lazy"></div>
+      </div>
+      <div class="split__text">
+        <h2 class="reveal">Сервис, который работает круглый год</h2>
+        <p class="lead reveal">Единый стандарт размещения, чистоты и&nbsp;обслуживания во&nbsp;всём комплексе.</p>
+        <div class="services">
+          <div class="svc reveal"><svg viewBox="0 0 40 40"><path d="M4 26c4 0 4 3 8 3s4-3 8-3 4 3 8 3 4-3 8-3M4 33c4 0 4 3 8 3s4-3 8-3 4 3 8 3 4-3 8-3M12 22V6h2M26 22V6h2M12 11h14M12 17h14"/></svg>Подогреваемый открытый бассейн</div>
+          <div class="svc reveal"><svg viewBox="0 0 40 40"><path d="M8 4v12a4 4 0 0 0 8 0V4M12 4v32M28 36V4c-5 3-6 9-6 14h6"/></svg>Круглогодичная столовая и&nbsp;кафе</div>
+          <div class="svc reveal"><svg viewBox="0 0 40 40"><rect x="7" y="4" width="26" height="32" rx="2"/><circle cx="20" cy="22" r="8"/><path d="M11 9h4"/></svg>Профессиональная прачечная и&nbsp;клининг</div>
+          <div class="svc reveal"><svg viewBox="0 0 40 40"><path d="M6 30h28M9 30a11 11 0 0 1 22 0M20 19v-3M17 16h6M4 34h32"/></svg>Ресепшен и&nbsp;консьерж-сервис</div>
+          <div class="svc reveal"><svg viewBox="0 0 40 40"><rect x="5" y="8" width="30" height="20" rx="2"/><path d="M14 34h12M20 28v6"/></svg>Пространство для работы и&nbsp;встреч</div>
+          <div class="svc reveal"><svg viewBox="0 0 40 40"><circle cx="20" cy="12" r="6"/><path d="M10 36c0-7 4-12 10-12s10 5 10 12M30 6l3-3M33 10h3"/></svg>Детская комната и&nbsp;анимация</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Почему «Мечта» -->
+    <section class="section split" id="why">
+      <span class="side-label">Преимущества</span>
+      <div class="split__text">
+        <h2 class="reveal">Почему «Мечта»</h2>
+        <p class="lead reveal">Собственник получает недвижимость и&nbsp;готовую модель управления.</p>
+        <ol class="why">
+          <li class="reveal"><i>01</i><div><b>Профессиональное управление</b><span>Маркетинг, бронирование, гости и&nbsp;отчётность</span></div></li>
+          <li class="reveal"><i>02</i><div><b>Круглогодичный формат</b><span>Столовая, кафе, коворкинг и&nbsp;сервис — весь год</span></div></li>
+          <li class="reveal"><i>03</i><div><b>Свободный выбор апартамента</b><span>Нужная площадь и&nbsp;планировка</span></div></li>
+          <li class="reveal"><i>04</i><div><b>Собственная инфраструктура</b><span>Подогреваемый бассейн, зона отдыха, семейный сервис</span></div></li>
+          <li class="reveal"><i>05</i><div><b>Транспорт рядом</b><span>Станция и&nbsp;автостанция — в&nbsp;350&nbsp;м</span></div></li>
+          <li class="reveal"><i>06</i><div><b>Море в пяти минутах</b><span>Понятный курортный сценарий без сложной логистики</span></div></li>
+        </ol>
+      </div>
+      <div class="split__media stack">
+        <div class="img-reveal parallax"><img src="../images/pool-side.webp" alt="Бассейн и зона отдыха" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 06 Территория -->
+    <section class="section territory sand" id="territory">
+      <span class="side-label">Территория</span>
+      <div class="territory__plan reveal">
+        <img src="../images/plan-territory.webp" alt="Генплан территории комплекса" loading="lazy">
+      </div>
+      <div class="territory__text">
+        <h2 class="reveal">Территория для отдыха весь день</h2>
+        <div class="tstats">
+          <div class="reveal"><strong>2 459 м²</strong><span>площадь территории</span></div>
+          <div class="reveal"><strong>8 × 15 м</strong><span>подогреваемый бассейн, глубина 1,8&nbsp;м</span></div>
+          <div class="reveal"><strong>87,5 м²</strong><span>зона шезлонгов</span></div>
+          <div class="reveal"><strong>200 м²</strong><span>открытая посадка столовой</span></div>
+          <div class="reveal"><strong>4</strong><span>машино-места на территории</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Планировки -->
+    <section class="section" id="plans">
+      <span class="side-label">Планировки</span>
+      <div class="head">
+        <h2 class="reveal">Апартаменты на четырёх жилых этажах</h2>
+        <p class="reveal">Одно- и&nbsp;двухкомнатные планировки. Каталог с&nbsp;площадями — по&nbsp;запросу.</p>
+      </div>
+      <div class="floors">
+        <div class="floors__tabs" role="tablist">
+          <button class="ftab active" data-floor="2"><b>2</b> этаж<small>16 апартаментов</small></button>
+          <button class="ftab" data-floor="3"><b>3</b> этаж<small>16 апартаментов</small></button>
+          <button class="ftab" data-floor="4"><b>4</b> этаж<small>16 апартаментов</small></button>
+          <button class="ftab" data-floor="5"><b>5</b> этаж<small>20 апартаментов</small></button>
+        </div>
+        <div class="floors__view">
+          <img src="../images/floor-2.webp" alt="Планировка 2 этажа" id="floor-img">
+        </div>
+      </div>
+      <div class="center"><a href="#contact" class="btn">Запросить каталог планировок</a></div>
+    </section>
+
+    <!-- 08 Крым -->
+    <section class="crimea" id="crimea">
+      <span class="side-label">Крым</span>
+      <div class="crimea__inner">
+        <h2 class="reveal">Крым: место, где хочется оставаться</h2>
+        <div class="cols">
+          <div class="reveal"><p class="caps">Климат</p><p>На Южном берегу климат имеет средиземноморские черты: долгое тёплое лето, мягкая зима и&nbsp;много солнечных дней.</p></div>
+          <div class="reveal"><p class="caps">Море и горы</p><p>Море смягчает температурные перепады, а&nbsp;горный рельеф создаёт особый микроклимат.</p></div>
+          <div class="reveal"><p class="caps">Природа рядом</p><p>Морской воздух, солнце, зелень и&nbsp;близость к&nbsp;воде становятся частью повседневной жизни.</p></div>
+        </div>
+        <p class="quote reveal">Крым — место, где отдых может стать образом жизни.</p>
+      </div>
+      <svg class="landscape" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+        <circle class="sun" cx="1170" cy="70" r="26"/>
+        <path class="line line--1" d="M0 190 C120 170 220 110 370 105 C480 100 500 150 580 150 C680 150 740 60 860 60 C960 60 990 130 1080 130 C1160 130 1200 100 1250 100 C1330 100 1390 140 1440 160"/>
+        <path class="line line--2" d="M0 225 C160 210 300 195 450 200 C600 205 700 215 820 205 C960 195 1100 190 1240 200 C1330 206 1400 214 1440 215"/>
+        <path class="wave" d="M100 245 q30 -8 60 0 t60 0 M520 248 q30 -8 60 0 t60 0 M940 245 q30 -8 60 0 t60 0"/>
+      </svg>
+    </section>
+
+    <!-- 09 Расположение -->
+    <section class="section split split--rev" id="location">
+      <span class="side-label">Расположение</span>
+      <div class="split__media">
+        <div class="map reveal">
+          <img src="../images/map.webp" alt="Карта: здание комплекса на улице Федько, рядом станция Айвазовская, автостанция и набережная" loading="lazy">
+          <span class="map__pin" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="split__text">
+        <h2 class="reveal">Спрос растёт, море — в&nbsp;пешей доступности</h2>
+        <div class="big-stat reveal">
+          <strong><span data-count="5321" data-format="mln">5,321</span> млн</strong>
+          <span>туристов посетили Крым в&nbsp;январе–августе 2025 года — на&nbsp;16% больше, чем годом ранее</span>
+        </div>
+        <div class="dist">
+          <div class="reveal"><strong>350 м</strong><span>до станции «Айвазовская» и&nbsp;автостанции</span></div>
+          <div class="reveal"><strong>5 минут</strong><span>пешком до набережной и&nbsp;пляжей</span></div>
+          <div class="reveal"><strong>2 км</strong><span>до центральной части Феодосии</span></div>
+        </div>
+        <p class="note">Источник: Государственный Совет Республики Крым, 01.10.2025</p>
+      </div>
+    </section>
+
+    <!-- 10 Феодосия -->
+    <section class="feodosia sand">
+      <span class="side-label">Феодосия</span>
+      <div class="feodosia__inner">
+        <h2 class="reveal">Феодосия: недвижимость у моря в&nbsp;полноценной городской среде</h2>
+        <div class="cols cols--2">
+          <p class="reveal">Феодосия сочетает преимущества курортного города и&nbsp;полноценной городской среды. Протяжённые пляжи, мягкий климат и&nbsp;развитая инфраструктура подходят и&nbsp;для отдыха, и&nbsp;для длительного проживания.</p>
+          <p class="reveal">В отличие от исключительно сезонных курортов, здесь есть городская жизнь, сервисы и&nbsp;инфраструктура, которыми можно пользоваться круглый год.</p>
+        </div>
+        <p class="quote reveal">Своё место у моря и недвижимость с потенциалом курортного использования.</p>
+      </div>
+      <svg class="landscape" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+        <circle class="sun" cx="1240" cy="50" r="22"/>
+        <path class="line line--1" d="M0 140 C150 110 260 90 330 92 C420 94 500 125 620 125 C760 125 820 85 940 85 C1060 85 1120 115 1250 110 C1340 106 1400 100 1440 100"/>
+        <path class="line line--3" d="M150 135 h40 v-18 h18 v18 M250 125 v-62 h-10 v-8 h30 v8 h-10 v62 M262 75 h90 M352 75 v-8 h20 v8 h-6 v40"/>
+        <path class="line line--2" d="M0 165 C200 158 400 150 600 155 C800 160 1000 165 1440 160"/>
+        <path class="line line--3" d="M960 160 l12 -26 v26 M972 134 l10 20 h-10"/>
+      </svg>
+    </section>
+
+    <!-- 11 Инвестиции -->
+    <section class="invest" id="invest">
+      <div class="invest__bg parallax"><img src="../images/facade-night.webp" alt="" loading="lazy"></div>
+      <span class="side-label">Инвестиции</span>
+      <div class="invest__inner">
+        <h2 class="reveal">Апартамент можно приобрести как самостоятельный объект</h2>
+        <p class="lead reveal">Продажа ведётся отдельными апартаментами. Собственник может жить в&nbsp;нём сам или передать его в&nbsp;профессиональное гостиничное управление.</p>
+        <div class="steps">
+          <div class="reveal"><i>01</i>Покупка апартамента</div>
+          <div class="reveal"><i>02</i>Гостиничное управление</div>
+          <div class="reveal"><i>03</i>Доход и рост стоимости</div>
+        </div>
+
+        <div class="season reveal">
+          <div class="season__toggle" role="tablist">
+            <button class="stab active" data-season="high">Май — октябрь</button>
+            <button class="stab" data-season="low">Ноябрь — апрель</button>
+          </div>
+          <div class="season__body">
+            <strong id="season-val">70–95%</strong>
+            <span>расчётная загрузка</span>
+            <div class="season__bar"><i id="season-from"></i><i id="season-to"></i></div>
+          </div>
+        </div>
+
+        <div class="money">
+          <div class="reveal"><strong>300–600</strong><span>тыс. ₽ в год — чистый доход одного апартамента</span></div>
+          <div class="reveal"><strong>1,2–2,4</strong><span>млн ₽ в год — выручка при покупке 4&nbsp;апартаментов</span></div>
+        </div>
+        <p class="note">Расчётные показатели по текущим материалам проекта. Итог зависит от площади и&nbsp;стоимости апартамента, тарифа, загрузки, расходов, комиссии УК и&nbsp;налогов. Доход и&nbsp;рост стоимости не&nbsp;гарантированы.</p>
+      </div>
+    </section>
+
+    <!-- 12 Контакты -->
+    <section class="contact" id="contact">
+      <div class="contact__text">
+        <img src="../images/logo-light.png" alt="Мечта — апартаменты у моря" class="contact__logo">
+        <h2>Получите подборку апартаментов и&nbsp;индивидуальный расчёт</h2>
+        <p>Подготовим доступные планировки и&nbsp;финансовую модель для выбранного апартамента.</p>
+        <p class="caps">Отдел продаж</p>
+        <ul class="contacts" id="contacts"></ul>
+        <p class="addr">Феодосия, улица Федько</p>
+      </div>
+      <form class="form" id="form" novalidate>
+        <label>Ваше имя<input name="name" required autocomplete="name"></label>
+        <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="+7"></label>
+        <fieldset>
+          <legend>Что вас интересует</legend>
+          <label class="chip"><input type="radio" name="goal" value="Апартамент для себя" checked><span>Для себя</span></label>
+          <label class="chip"><input type="radio" name="goal" value="Инвестиция"><span>Инвестиция</span></label>
+          <label class="chip"><input type="radio" name="goal" value="Несколько апартаментов"><span>Несколько апартаментов</span></label>
+        </fieldset>
+        <button class="btn btn--light" type="submit">Получить подборку</button>
+        <p class="form__msg" id="form-msg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="../images/logo-dark.png" alt="Мечта — апартаменты у моря" class="footer__logo">
+    <p>Феодосия · побережье Чёрного моря · 2026</p>
+    <p class="footer__small">Изображения — визуализации проектных решений. Информация на сайте не является публичной офертой.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lb-close" aria-label="Закрыть">✕</button>
+    <button class="lightbox__nav lightbox__prev" id="lb-prev" aria-label="Предыдущее фото">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lightbox__nav lightbox__next" id="lb-next" aria-label="Следующее фото">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
