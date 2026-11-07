@@ -1,5 +1,7 @@
 # «Мечта» — апартаменты у моря
 
+> В папке [`mechta-v1/`](mechta-v1/) лежит первая версия сайта, без виртуальной прогулки.
+
 Сайт апарт-отеля «Мечта» в Феодосии, сделанный по инвестиционной презентации. Чистый HTML, CSS и JavaScript, без сборки и зависимостей.
 
 ## Структура
@@ -31,3 +33,4 @@
 1. Репозиторий должен быть публичным (Settings → Change visibility)
 2. Settings → Pages → Deploy from a branch → ветка `claude/laughing-goldberg-3e1m31` (или `main` после слияния), папка `/ (root)`
 3. Через 1–2 минуты сайт будет доступен по адресу `https://hamik0977.github.io/derevenskaypekarnyasite/`
+4. Первая версия: `https://hamik0977.github.io/derevenskaypekarnyasite/mechta-v1/`
