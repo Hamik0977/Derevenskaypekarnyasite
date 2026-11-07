@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>«Мечта» — апартаменты у моря · Феодосия</title>
+<meta name="description" content="Апарт-отель «Мечта» в Феодосии: история места, сервис, инвестиции. 69 апартаментов у Чёрного моря.">
+<link rel="icon" href="../images/logo-dark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#5a2832;--wine2:#6e3440;--cream:#f1e9df;--paper:#f7f2eb;--ink:#3b2a2c;--soft:#7a6466;--rose:#b5826e;--line:#dccfc2;--pad:clamp(18px,6vw,100px);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}html,body{overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font-family:Montserrat,sans-serif;font-weight:300;font-size:15.5px;line-height:1.75}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
+h1,h2,h3,.tn{font-family:"Tenor Sans",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.08em;line-height:1.3}
+h2{font-size:clamp(1.4rem,2.6vw,2.1rem);margin-bottom:22px}
+.it{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.35;color:var(--wine)}
+.cap{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rose)}
+.wine{background:var(--wine);color:var(--cream)}.wine .cap{color:#d9b7a6}
+/* верхняя строка как в книге */
+.run{position:fixed;inset:0 0 auto;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:14px var(--pad);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;mix-blend-mode:difference;color:#fff;pointer-events:none}
+.run a{pointer-events:auto}
+.chap{position:fixed;left:clamp(8px,2vw,30px);top:50%;z-index:40;translate:0 -50%;font-family:"Tenor Sans";font-size:.8rem;letter-spacing:.2em;writing-mode:vertical-rl;rotate:180deg;mix-blend-mode:difference;color:#fff;transition:opacity .4s}
+/* обложка */
+.cover{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:80px 20px}
+.cover svg{position:absolute;inset:0;width:100%;height:100%;opacity:.16}
+.cover svg circle{fill:none;stroke:#e7cbbb;stroke-width:1;stroke-dasharray:2000;stroke-dashoffset:2000;animation:draw 4s var(--ease) forwards}
+.cover svg circle:nth-child(2){animation-delay:.3s}.cover svg circle:nth-child(3){animation-delay:.6s}.cover svg circle:nth-child(4){animation-delay:.9s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.cover img{width:min(360px,70vw);margin:0 auto;opacity:0;animation:fade 1.6s var(--ease) forwards .4s}
+.cover p{margin-top:28px;opacity:0;animation:fade 1.6s var(--ease) forwards .9s}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.cover .down{position:absolute;bottom:30px;left:50%;translate:-50% 0;width:1px;height:60px;background:rgba(241,233,223,.35);overflow:hidden}
+.cover .down::after{content:"";position:absolute;inset:0;background:var(--cream);transform:translateY(-100%);animation:drip 2s ease-in-out infinite}
+@keyframes drip{to{transform:translateY(100%)}}
+/* оглавление */
+.toc{padding:clamp(80px,12vw,150px) var(--pad);display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:start}
+.toc ol{list-style:none;border-top:1px solid var(--line)}
+.toc li a{display:grid;grid-template-columns:70px 1fr auto;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);transition:padding .4s var(--ease),color .3s}
+.toc li a:hover{padding-left:14px;color:var(--wine)}
+.toc .rn{font-family:"Tenor Sans";font-size:1.3rem;color:var(--rose)}.toc .t{font-family:"Tenor Sans";text-transform:uppercase;letter-spacing:.1em}.toc .pg{font-size:.8rem;color:var(--soft)}
+/* разделитель главы */
+.divider{min-height:92svh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:60px 20px}
+.divider .num{font-family:"Tenor Sans";font-size:clamp(7rem,22vw,18rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(231,203,187,.35);position:absolute;inset:0;display:grid;place-items:center;transform:translateY(var(--y,0))}
+.divider h2{position:relative;font-size:clamp(1.3rem,2.8vw,2.2rem);max-width:20ch;margin:16px auto 0}
+.divider .cap{position:relative}
+/* статьи */
+.sec{padding:clamp(70px,10vw,130px) var(--pad)}
+.ed{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.ed p+p{margin-top:14px}.ed .soft{color:var(--soft)}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,50px);margin-top:30px}
+.cols3>div{border-top:1px solid var(--line);padding-top:16px}.cols3 h3{font-size:.85rem;color:var(--wine);margin-bottom:8px}
+.sketch{width:100%;height:auto;margin-top:40px}
+.sketch path,.sketch circle,.sketch rect{fill:none;stroke:var(--wine);stroke-width:1.2;stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-dasharray:3000;stroke-dashoffset:3000;transition:stroke-dashoffset 4s var(--ease)}
+.sketch.on path,.sketch.on circle,.sketch.on rect{stroke-dashoffset:0}
+.frame{position:relative;padding:14px;border:1px solid var(--line)}.frame img{width:100%;object-fit:cover}
+/* карта с кругами */
+.map{position:relative;overflow:hidden}.map img{width:100%}
+.map .c{position:absolute;left:43.7%;top:30.6%;border:1px solid var(--wine);border-radius:50%;translate:-50% -50%;opacity:.7}
+.map .c1{width:16%;aspect-ratio:1}.map .c2{width:34%;aspect-ratio:1}.map .c3{width:56%;aspect-ratio:1;border-style:dashed}
+.map .dot{position:absolute;left:43.7%;top:30.6%;width:14px;height:14px;background:var(--wine);border-radius:50%;translate:-50% -50%;box-shadow:0 0 0 6px rgba(90,40,50,.2)}
+.dl{border-top:1px solid var(--line);margin-top:24px}.dl div{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.dl b{font-family:"Tenor Sans";font-weight:400;font-size:1.3rem;color:var(--wine)}
+.big{font-family:"Tenor Sans";font-size:clamp(2.6rem,6vw,4.6rem);color:var(--wine);line-height:1}
+/* полосы-интерьеры */
+.strips{display:flex;gap:8px;height:clamp(360px,52vw,560px);margin-top:40px}
+.strip{flex:1;position:relative;overflow:hidden;transition:flex 1s var(--ease);cursor:pointer;border:0;padding:0;background:var(--line)}
+.strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:filter .6s}
+.strip span{position:absolute;left:14px;bottom:14px;color:#fff;font-family:"Tenor Sans";font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 10px rgba(0,0,0,.5);opacity:0;transition:opacity .4s}
+.strip.on{flex:5}.strip.on img{filter:none}.strip.on span{opacity:1}
+/* сервис */
+.svc{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(231,203,187,.3);margin-top:30px}
+.svc div{padding:20px 0;border-bottom:1px solid rgba(231,203,187,.3);display:flex;gap:18px;align-items:baseline}
+.svc i{font-family:"Tenor Sans";font-style:normal;color:#d9b7a6;font-size:.8rem}
+.why{counter-reset:w;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.why li{padding:26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .4s}
+.why li:hover{background:var(--cream)}
+.why li::before{counter-increment:w;content:counter(w,upper-roman);font-family:"Tenor Sans";color:var(--rose);display:block;margin-bottom:10px}
+.why h3{font-size:.85rem;color:var(--wine);margin-bottom:6px}.why p{font-size:.92rem;color:var(--soft)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.stats div{border-top:1px solid rgba(231,203,187,.35);padding-top:14px}.stats b{display:block;font-family:"Tenor Sans";font-weight:400;font-size:clamp(1.6rem,3vw,2.4rem)}
+.tabs{display:flex;gap:0;border:1px solid var(--line);width:max-content;max-width:100%;overflow-x:auto;margin:26px 0 18px}
+.tabs button{padding:12px 22px;background:none;border:0;border-right:1px solid var(--line);cursor:pointer;font-family:"Tenor Sans";letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;white-space:nowrap}
+.tabs button:last-child{border-right:0}.tabs button.on{background:var(--wine);color:var(--cream)}
+.plan{background:#fff;border:1px solid var(--line);padding:clamp(10px,3vw,30px)}.plan img{transition:opacity .3s;width:100%}
+/* инвестиции */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:34px 0}
+.steps div{border-top:1px solid var(--wine);padding-top:14px}.steps b{font-family:"Tenor Sans";color:var(--rose);margin-right:8px}
+.season{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line)}
+.season button{padding:30px;text-align:left;background:none;border:0;cursor:pointer;transition:background .4s}
+.season button:first-child{border-right:1px solid var(--line)}.season button.on{background:var(--wine);color:var(--cream)}
+.season b{display:block;font-family:"Tenor Sans";font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1}
+.money{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}.money div{border-top:1px solid var(--line);padding-top:14px}
+.money b{font-family:"Tenor Sans";font-weight:400;font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--wine)}
+.note{font-size:.8rem;font-style:italic;color:var(--soft);margin-top:22px;max-width:90ch}
+/* контакты */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px)}
+form{display:grid;gap:18px;align-content:start}
+form input{background:none;border:0;border-bottom:1px solid rgba(231,203,187,.45);padding:12px 0;color:var(--cream);font:inherit;outline:none}form input::placeholder{color:rgba(241,233,223,.6)}
+form button{justify-self:start;padding:16px 30px;background:var(--cream);color:var(--wine);border:0;font-family:"Tenor Sans";text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;cursor:pointer;transition:letter-spacing .4s}
+form button:hover{letter-spacing:.24em}.msg{min-height:1.3em;font-size:.9rem;color:#e7cbbb}
+.contacts{list-style:none;margin-top:16px}
+footer{padding:60px var(--pad);text-align:center}footer .fin{font-family:"Tenor Sans";font-size:clamp(2rem,6vw,4rem);letter-spacing:.3em;color:var(--cream)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}.rv.on{opacity:1;transform:none}
+@media(max-width:900px){.toc,.ed,.contact{grid-template-columns:1fr}.cols3,.why,.steps,.stats{grid-template-columns:1fr 1fr}.svc{grid-template-columns:1fr}.chap{display:none}.strips{flex-direction:column;height:auto}.strip{height:70px;flex:none!important;transition:height 1s var(--ease)}.strip.on{height:320px}}
+@media(max-width:600px){.cols3,.why,.steps,.stats,.money,.season{grid-template-columns:1fr}.season button:first-child{border-right:0;border-bottom:1px solid var(--line)}.dl div{grid-template-columns:1fr;gap:2px}.run span{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.cover img,.cover p{opacity:1;transform:none}.sketch *{stroke-dashoffset:0!important}}
+</style>
+</head>
+<body>
+<div class="run"><a href="#">Мечта</a><span>Апартаменты у моря</span><span>Феодосия</span></div>
+<div class="chap" id="chap"></div>
+
+<section class="cover wine" data-ch="">
+  <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="500" cy="500" r="160"/><circle cx="500" cy="500" r="260"/><circle cx="500" cy="500" r="370"/><circle cx="500" cy="500" r="490"/></svg>
+  <div><img src="../images/logo-light.png" alt="Мечта — апартаменты у моря"><p class="cap">Феодосия · побережье Чёрного моря · 2026</p></div>
+  <span class="down"></span>
+</section>
+
+<section class="toc">
+  <div class="rv"><p class="cap">Содержание</p><p class="it" style="margin-top:14px">Место, куда хочется возвращаться</p></div>
+  <ol class="rv">
+    <li><a href="#ch1"><span class="rn">I</span><span class="t">Крым. Место, где хочется оставаться</span><span class="pg">01</span></a></li>
+    <li><a href="#ch2"><span class="rn">II</span><span class="t">«Мечта». Апарт-отель у моря</span><span class="pg">02</span></a></li>
+    <li><a href="#ch3"><span class="rn">III</span><span class="t">Инвестиции и управление</span><span class="pg">03</span></a></li>
+  </ol>
+</section>
+
+<!-- ГЛАВА I -->
+<section class="divider wine" id="ch1" data-ch="Глава I"><span class="num">I</span><div><p class="cap">Глава I</p><h2>Крым. Место, где хочется оставаться</h2></div></section>
+
+<section class="sec" data-ch="Глава I">
+  <div class="ed"><div class="rv"><p class="cap">Крым</p><h2>Отдых, который может стать образом жизни</h2><p class="it">Крым — место, где отдых может стать образом жизни.</p></div>
+  <svg class="sketch rv" viewBox="0 0 600 260" aria-hidden="true"><circle cx="470" cy="70" r="28"/><path d="M0 200 C80 180 140 110 230 108 C300 106 320 150 380 150 C450 150 480 90 560 92 C580 93 595 100 600 104"/><path d="M0 230 C120 222 260 214 400 220 C480 224 560 226 600 225"/><path d="M60 248 q20-6 40 0 t40 0 M300 250 q20-6 40 0 t40 0 M470 248 q20-6 40 0 t40 0"/><path d="M370 214 l10-24 v24 M380 190 l9 18 h-9"/></svg></div>
+  <div class="cols3">
+    <div class="rv"><h3>Климат</h3><p>На Южном берегу климат имеет средиземноморские черты: долгое тёплое лето, мягкая зима и много солнечных дней.</p></div>
+    <div class="rv"><h3>Море и горы</h3><p>Море смягчает температурные перепады, а горный рельеф создаёт особый микроклимат.</p></div>
+    <div class="rv"><h3>Природа рядом</h3><p>Морской воздух, солнце, зелень и близость к воде становятся частью повседневной жизни.</p></div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--cream)" data-ch="Глава I">
+  <div class="ed">
+    <div class="frame rv"><img src="../images/facade-front.webp" alt="Фасад комплекса «Мечта»" loading="lazy"></div>
+    <div class="rv"><p class="cap">Феодосия</p><h2>Недвижимость у моря в полноценной городской среде</h2>
+      <p>Феодосия сочетает преимущества курортного города и полноценной городской среды. Протяжённые пляжи, мягкий климат и развитая инфраструктура подходят и для отдыха, и для длительного проживания.</p>
+      <p class="soft">В отличие от исключительно сезонных курортов, здесь есть городская жизнь, сервисы и инфраструктура, которыми можно пользоваться круглый год.</p></div>
+  </div>
+</section>
+
+<section class="sec" data-ch="Глава I">
+  <div class="ed">
+    <div class="rv"><p class="cap">Расположение</p><h2>Спрос растёт, море — в пешей доступности</h2>
+      <p class="big"><span data-c="5321" data-f="mln">5,321</span> млн</p><p>туристов посетили Крым в январе–августе 2025 года — на 16% больше, чем годом ранее</p>
+      <div class="dl"><div><b>350 м</b><span>до станции «Айвазовская» и автостанции</span></div><div><b>5 минут</b><span>пешком до набережной и пляжей</span></div><div><b>2 км</b><span>до центральной части Феодосии</span></div></div>
+      <p class="note">Источник: Государственный Совет Республики Крым, 01.10.2025</p></div>
+    <div class="map frame rv"><img src="../images/map.webp" alt="Карта: здание комплекса на улице Федько у моря" loading="lazy"><span class="c c3"></span><span class="c c2"></span><span class="c c1"></span><span class="dot"></span></div>
+  </div>
+</section>
+
+<!-- ГЛАВА II -->
+<section class="divider wine" id="ch2" data-ch="Глава II"><span class="num">II</span><div><p class="cap">Глава II</p><h2>«Мечта». Апарт-отель у моря</h2></div></section>
+
+<section class="sec" data-ch="Глава II">
+  <div class="ed"><div class="rv"><p class="cap">О проекте</p><h2>Профессиональный апарт-отель с единым стандартом сервиса</h2>
+    <p>Комплекс создаётся в формате апарт-отеля гостиничного типа с едиными стандартами качества, управления и сервиса: круглогодичная работа, профессиональное гостиничное управление, высокая ликвидность объекта, единый гостиничный стандарт и высокий уровень сервиса.</p>
+    <div class="money"><div><b data-c="69">69</b><p>одно- и двухкомнатных апартаментов</p></div><div><b><span data-c="413">413</span> м²</b><p>коммерческих помещений: аренда 88 м² и столовая 325 м²</p></div></div></div>
+    <div class="frame rv"><img src="../images/facade-sign.webp" alt="Фасад с вывеской" loading="lazy"></div></div>
+</section>
+
+<section class="sec" style="background:var(--cream)" data-ch="Глава II">
+  <p class="cap rv">Интерьеры</p><h2 class="rv">Спокойная природная палитра</h2>
+  <p class="rv" style="max-width:70ch">Лобби, коридоры и апартаменты объединяет тёплая нейтральная палитра. Единый интерьерный стандарт формирует цельный образ отеля и упрощает обслуживание номерного фонда. Нажмите на полосу, чтобы раскрыть её.</p>
+  <div class="strips" id="strips">
+    <button class="strip on"><img src="../images/room-main.webp" alt="Спальня" loading="lazy"><span>Апартамент</span></button>
+    <button class="strip"><img src="../images/lobby.webp" alt="Лобби" loading="lazy"><span>Лобби</span></button>
+    <button class="strip"><img src="../images/room-desk.webp" alt="Рабочая зона" loading="lazy"><span>Рабочая зона</span></button>
+    <button class="strip"><img src="../images/corridor.webp" alt="Коридор" loading="lazy"><span>Коридор</span></button>
+    <button class="strip"><img src="../images/room-2.webp" alt="Спальня" loading="lazy"><span>Спальня</span></button>
+    <button class="strip"><img src="../images/pool-side.webp" alt="Бассейн" loading="lazy"><span>Бассейн</span></button>
+  </div>
+  <p class="note">Визуализации проектных решений. Финальная комплектация может отличаться.</p>
+</section>
+
+<section class="sec wine" data-ch="Глава II">
+  <div class="ed" style="align-items:start"><div class="rv"><p class="cap">Сервис</p><h2>Сервис, который работает круглый год</h2><p>Единый стандарт размещения, чистоты и обслуживания во всём комплексе.</p>
+    <div class="svc"><div><i>01</i>Подогреваемый открытый бассейн</div><div><i>02</i>Круглогодичная столовая и кафе</div><div><i>03</i>Профессиональная прачечная и клининг</div><div><i>04</i>Ресепшен и консьерж-сервис</div><div><i>05</i>Пространство для работы и встреч</div><div><i>06</i>Детская комната и анимация</div></div></div>
+    <div class="rv"><p class="cap">Территория для отдыха весь день</p><div class="stats"><div><b>2 459 м²</b>площадь территории</div><div><b>8 × 15 м</b>бассейн, глубина 1,8 м</div><div><b>87,5 м²</b>зона шезлонгов</div><div><b>200 м²</b>открытая посадка</div><div><b>4</b>машино-места</div></div>
+    <img src="../images/plan-territory.webp" alt="Генплан территории" loading="lazy" style="margin-top:30px;background:var(--paper);padding:10px"></div></div>
+</section>
+
+<section class="sec" data-ch="Глава II">
+  <p class="cap rv">Преимущества</p><h2 class="rv">Почему «Мечта»</h2><p class="rv">Собственник получает недвижимость и готовую модель управления.</p>
+  <ol class="why">
+    <li class="rv"><h3>Профессиональное управление</h3><p>Маркетинг, бронирование, гости и отчётность</p></li>
+    <li class="rv"><h3>Круглогодичный формат</h3><p>Столовая, кафе, коворкинг и сервис — весь год</p></li>
+    <li class="rv"><h3>Свободный выбор апартамента</h3><p>Нужная площадь и планировка</p></li>
+    <li class="rv"><h3>Собственная инфраструктура</h3><p>Подогреваемый бассейн, зона отдыха, семейный сервис</p></li>
+    <li class="rv"><h3>Транспорт рядом</h3><p>Станция и автостанция — в 350 м</p></li>
+    <li class="rv"><h3>Море в пяти минутах</h3><p>Понятный курортный сценарий без сложной логистики</p></li>
+  </ol>
+</section>
+
+<section class="sec" style="background:var(--cream)" data-ch="Глава II">
+  <p class="cap rv">Планировки</p><h2 class="rv">Апартаменты на четырёх жилых этажах</h2><p class="rv">Одно- и двухкомнатные планировки. Каталог с площадями — по запросу.</p>
+  <div class="tabs" id="tabs"><button class="on" data-f="2">2 этаж · 16</button><button data-f="3">3 этаж · 16</button><button data-f="4">4 этаж · 16</button><button data-f="5">5 этаж · 20</button></div>
+  <div class="plan"><img src="../images/floor-2.webp" alt="Планировка 2 этажа" id="plan"></div>
+</section>
+
+<!-- ГЛАВА III -->
+<section class="divider wine" id="ch3" data-ch="Глава III"><span class="num">III</span><div><p class="cap">Глава III</p><h2>Инвестиции и управление</h2></div></section>
+
+<section class="sec" data-ch="Глава III">
+  <p class="cap rv">Инвестиции</p><h2 class="rv">Апартамент можно приобрести как самостоятельный объект</h2>
+  <p class="rv" style="max-width:70ch">Продажа ведётся отдельными апартаментами. Собственник может жить в нём сам или передать его в профессиональное гостиничное управление.</p>
+  <div class="steps"><div class="rv"><b>I</b>Покупка апартамента</div><div class="rv"><b>II</b>Гостиничное управление</div><div class="rv"><b>III</b>Доход и рост стоимости</div></div>
+  <div class="season rv" id="season"><button class="on"><span class="cap">Май — октябрь</span><b>70–95%</b>расчётная загрузка</button><button><span class="cap">Ноябрь — апрель</span><b>30–50%</b>расчётная загрузка</button></div>
+  <div class="money"><div class="rv"><b>300–600</b><p>тыс. ₽ в год — чистый доход одного апартамента</p></div><div class="rv"><b>1,2–2,4</b><p>млн ₽ в год — выручка при покупке 4 апартаментов</p></div></div>
+  <p class="note">Расчётные показатели по текущим материалам проекта. Итог зависит от площади и стоимости апартамента, тарифа, загрузки, расходов, комиссии УК и налогов. Доход и рост стоимости не гарантированы.</p>
+</section>
+
+<section class="sec wine" id="contact" data-ch="Глава III">
+  <div class="contact"><div class="rv"><img src="../images/logo-light.png" alt="Мечта" style="height:70px;margin-bottom:30px"><h2>Получите подборку апартаментов и индивидуальный расчёт</h2><p>Подготовим доступные планировки и финансовую модель для выбранного апартамента.</p><p class="cap" style="margin-top:26px">Отдел продаж</p><ul class="contacts" id="contacts"></ul><p>Феодосия, улица Федько</p></div>
+  <form id="form" class="rv" novalidate><input name="name" placeholder="Ваше имя" autocomplete="name"><input name="phone" type="tel" placeholder="Телефон" autocomplete="tel"><button type="submit">Получить подборку</button><p class="msg" id="msg" role="status"></p></form></div>
+</section>
+<footer class="wine"><p class="fin">МЕЧТА</p><p class="cap" style="margin-top:14px">Изображения — визуализации проектных решений. Не является публичной офертой.</p></footer>
+
+<script>
+const CONTACTS={phone:'',telegram:'',email:''};
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('on');e.target.querySelectorAll('[data-c]').forEach(cu);if(e.target.matches('[data-c]'))cu(e.target);io.unobserve(e.target)}),{threshold:.2});
+$$('.rv').forEach(el=>io.observe(el));
+function cu(el){if(RM||el.dataset.done)return;el.dataset.done=1;const t=+el.dataset.c,f=el.dataset.f,t0=performance.now();const st=n=>{const k=Math.min((n-t0)/1600,1),v=Math.round(t*(1-Math.pow(1-k,3)));el.textContent=f==='mln'?(v/1000).toFixed(3).replace('.',','):v.toLocaleString('ru-RU');if(k<1)requestAnimationFrame(st)};requestAnimationFrame(st)}
+// номер главы сбоку и параллакс римских цифр
+const secs=$$('[data-ch]'),chap=$('#chap');
+function sc(){const mid=innerHeight/2;let cur='';secs.forEach(s=>{const r=s.getBoundingClientRect();if(r.top<mid&&r.bottom>mid)cur=s.dataset.ch});chap.textContent=cur;chap.style.opacity=cur?1:0;
+ if(!RM)$$('.divider').forEach(d=>{const r=d.getBoundingClientRect();d.style.setProperty('--y',`${(r.top+r.height/2-innerHeight/2)*-.25}px`)})}
+addEventListener('scroll',()=>requestAnimationFrame(sc),{passive:true});sc();
+$$('.strip').forEach(s=>s.onclick=()=>{$$('.strip').forEach(x=>x.classList.remove('on'));s.classList.add('on')});
+$$('#tabs button').forEach(b=>b.onclick=()=>{$$('#tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const p=$('#plan');p.style.opacity=0;setTimeout(()=>{p.src=`../images/floor-${b.dataset.f}.webp`;p.alt=`Планировка ${b.dataset.f} этажа`;p.onload=()=>p.style.opacity=1},200)});
+$$('#season button').forEach(b=>b.onclick=()=>{$$('#season button').forEach(x=>x.classList.remove('on'));b.classList.add('on')});
+const ul=$('#contacts');if(CONTACTS.phone)ul.innerHTML+=`<li><a href="tel:${CONTACTS.phone.replace(/[^\d+]/g,'')}">${CONTACTS.phone}</a></li>`;if(CONTACTS.telegram)ul.innerHTML+=`<li><a href="https://t.me/${CONTACTS.telegram}">Telegram @${CONTACTS.telegram}</a></li>`;if(CONTACTS.email)ul.innerHTML+=`<li><a href="mailto:${CONTACTS.email}">${CONTACTS.email}</a></li>`;if(!ul.innerHTML)ul.innerHTML='<li>Контакты появятся в ближайшее время</li>';
+$('#form').onsubmit=e=>{e.preventDefault();const f=e.target.elements,n=f.name.value.trim(),p=f.phone.value.trim();if(!n||p.replace(/\D/g,'').length<10){$('#msg').textContent='Укажите имя и телефон.';return}const t=`Заявка «Мечта»: ${n}, ${p}`;if(CONTACTS.telegram)open(`https://t.me/${CONTACTS.telegram}?text=${encodeURIComponent(t)}`,'_blank');else if(CONTACTS.email)location.href=`mailto:${CONTACTS.email}?subject=Заявка&body=${encodeURIComponent(t)}`;else $('#msg').textContent='Приём заявок скоро заработает. Спасибо!'};
+</script>
+</body>
+</html>

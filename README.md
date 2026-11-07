@@ -34,3 +34,14 @@
 2. Settings → Pages → Deploy from a branch → ветка `claude/laughing-goldberg-3e1m31` (или `main` после слияния), папка `/ (root)`
 3. Через 1–2 минуты сайт будет доступен по адресу `https://hamik0977.github.io/Derevenskaypekarnyasite/`
 4. Первая версия: `https://hamik0977.github.io/Derevenskaypekarnyasite/mechta-v1/`
+
+## Четыре варианта дизайна
+
+Тот же проект «Мечта», оформленный в стиле четырёх образцов:
+
+- `navy/` — «Синий», в стиле BERIY PALACE: `https://hamik0977.github.io/Derevenskaypekarnyasite/navy/`
+- `bordo/` — «Бордо», в стиле Royalta: `https://hamik0977.github.io/Derevenskaypekarnyasite/bordo/`
+- `zoloto/` — «Золото», в стиле Sky Plaza: `https://hamik0977.github.io/Derevenskaypekarnyasite/zoloto/`
+- `oliva/` — «Олива», в стиле MORE YUVA: `https://hamik0977.github.io/Derevenskaypekarnyasite/oliva/`
+
+Каждый вариант — один файл `index.html`. Картинки берутся из общей папки `images/`. Контакты отдела продаж заполняются в объекте `CONTACTS` в конце каждого файла.
