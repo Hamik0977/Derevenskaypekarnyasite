@@ -30,4 +30,4 @@
 
 ## Адрес на GitHub Pages
 
-После включения Pages эта версия будет доступна по адресу `https://hamik0977.github.io/derevenskaypekarnyasite/mechta-v1/`
+После включения Pages эта версия будет доступна по адресу `https://hamik0977.github.io/Derevenskaypekarnyasite/mechta-v1/`

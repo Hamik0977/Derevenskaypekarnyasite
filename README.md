@@ -32,5 +32,5 @@
 
 1. Репозиторий должен быть публичным (Settings → Change visibility)
 2. Settings → Pages → Deploy from a branch → ветка `claude/laughing-goldberg-3e1m31` (или `main` после слияния), папка `/ (root)`
-3. Через 1–2 минуты сайт будет доступен по адресу `https://hamik0977.github.io/derevenskaypekarnyasite/`
-4. Первая версия: `https://hamik0977.github.io/derevenskaypekarnyasite/mechta-v1/`
+3. Через 1–2 минуты сайт будет доступен по адресу `https://hamik0977.github.io/Derevenskaypekarnyasite/`
+4. Первая версия: `https://hamik0977.github.io/Derevenskaypekarnyasite/mechta-v1/`
